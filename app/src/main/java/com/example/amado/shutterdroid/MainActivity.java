@@ -47,7 +47,7 @@ public class MainActivity extends ActionBarActivity implements SearchView.OnQuer
         mAdapter= new ImagesAdapter(this,mImages);
         recyclerView.setAdapter(mAdapter);
 
-        ShutterStock.getRecent(new Date(), new Callback<List<Image>>() {
+        ShutterStock.getRecent(new SimpleDateFormat("yyyy-MM-dd").format(new Date()), new Callback<List<Image>>() {
             @Override
             public void success(List<Image> images, Response response) {
                 Log.d("MainActivity", "success");

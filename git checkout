@@ -1,0 +1,5 @@
+[33mcommit 5aa07681a7d0939404cf3de4750d8340d95cfc07[m
+Author: RoyMontoya <roy_a18@hotmail.com>
+Date:   Fri Mar 13 17:48:43 2015 -1000
+
+    get recent method was working before adding search method, search method is working.

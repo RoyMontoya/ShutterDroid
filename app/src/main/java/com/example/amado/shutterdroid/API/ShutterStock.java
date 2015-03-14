@@ -33,8 +33,8 @@ public class ShutterStock {
         SERVICE.search(query, new ImageCallBack(cb));
     }
 
-    public static void getRecent(Date date, Callback<List<Image>> cb){
-        SERVICE.getRecent(new SimpleDateFormat("yyyy-MM-dd").format(date), new ImageCallBack(cb));
+    public static void getRecent(String date, Callback<List<Image>> cb){
+        SERVICE.getRecent(date, new ImageCallBack(cb));
     }
 
      private static class ImageCallBack implements Callback<Response> {

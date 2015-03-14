@@ -44,6 +44,7 @@ public class ImagesAdapter extends RecyclerView.Adapter<ImagesAdapter.ViewHolder
         return new ViewHolder(v);
     }
 
+    
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
         Image image = mImages.get(i);
